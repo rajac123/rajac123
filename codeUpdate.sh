@@ -16,7 +16,8 @@ updateCode() {
     if [ ! -d /tmp/github2/rajac123/ ]; then
         mkdir /tmp/github2/rajac123
     fi
-    rsync -aSP /tmp/github/rajac123/ /tmp/github2/rajac123/ --delete
+    cd $BASEDIR/tmp
+    rsync -aSP $BASEDIR/tmp/github/rajac123/ /tmp/github2/rajac123/ --delete
     cd $BASEDIR
     #systemctl daemon-reload
 }
