@@ -17,5 +17,5 @@ jobs:
           cd /tmp/github/rajac123
           echo ${{ secrets.PASSWORD }} | sudo -S git checkout main
           echo ${{ secrets.PASSWORD }} | sudo -S git pull origin main
-          #echo ${{ secrets.PASSWORD }} | sudo -S chmod +x /tmp/github/rajac123/codeUpdate.sh
-          #echo ${{ secrets.PASSWORD }} | sudo -S /tmp/github/rajac123/codeUpdate.sh
+          echo ${{ secrets.PASSWORD }} | sudo -S chmod +x /tmp/github/rajac123/codeUpdate.sh
+          echo ${{ secrets.PASSWORD }} | sudo -S /tmp/github/rajac123/codeUpdate.sh
