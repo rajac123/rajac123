@@ -16,6 +16,6 @@ jobs:
         script: |
           cd /tmp/github
           echo ${{ secrets.PASSWORD }} | sudo -S git checkout main
-          echo ${{ secrets.PASSWORD }} | sudo -S git pull https://github.com/rajac123/rajac123.git
+          echo ${{ secrets.PASSWORD }} | sudo -S git pull 
           #echo ${{ secrets.PASSWORD }} | sudo -S chmod +x /tmp/github/rajac123/codeUpdate.sh
           #echo ${{ secrets.PASSWORD }} | sudo -S /tmp/github/rajac123/codeUpdate.sh
