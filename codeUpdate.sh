@@ -10,6 +10,7 @@ prepareforUpdate() {
     fi
 }
 
+
 updateCode() {
     cd $BASEDIR
     if [ ! -d /tmp/github2/rajac123/ ]; then
